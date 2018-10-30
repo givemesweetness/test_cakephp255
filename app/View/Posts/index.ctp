@@ -1,5 +1,6 @@
 <h1>Blog posts</h1>
 <p><?php echo $this->Html->link('Add Post', array('action' => 'add')); ?></p>
+
 <table>
     <tr>
         <th>Id</th>
@@ -9,7 +10,6 @@
     </tr>
 
 <!-- ここで $posts 配列をループして、投稿情報を表示 -->
-
     <?php foreach ($posts as $post): ?>
     <tr>
         <td><?php echo $post['Post']['id']; ?></td>

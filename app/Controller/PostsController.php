@@ -20,6 +20,8 @@ class PostsController extends AppController {
     }
     
     public function add() {
+        $this->log($this->request->data,LOG_DEBUG);
+        $this->log("sdfsdf",LOG_DEBUG);
         if ($this->request->is('post')) {
             $this->Post->create();
             if ($this->Post->save($this->request->data)) {
